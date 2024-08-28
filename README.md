@@ -22,11 +22,11 @@ The data is from 2016, so it is outdated as fitness trackers matured a lot since
 I have used Microsoft SQL Server Management Studio for this project to help process and analyze and for visualization I have used Tableau Public. In order to solve this business task, only 6 of the given 18 datasets were used.
 
 #### Process
-Clean and format data to be more meaningful and clearer. In this step I have organized data by adding columns, extracting information and removing bad data and duplicates. For the sake of simplicity, I have centralized all of the data into a Relational Database that is connected using MSSQL. This allowed me to easily manage the entirety of the files and make relevant queries, as the CSV files can be transformed into tables which I have linked by joining common attributes. Note that the server for the mentioned Database is localhost.
+Clean and format data to be more meaningful and clearer. In this step I have organized data by adding columns, extracting information and removing bad data and duplicates. 
 
+![image](https://github.com/user-attachments/assets/aa816635-54af-4b06-86b7-927da1fe8be8)
 
-
-
+![image](https://github.com/user-attachments/assets/4cccf7bc-6db8-4217-a5a0-21d0f6cccae0)
 
 
 Number of unique users represented by the “Id” column. There were 24 unique users who provided data for their 'daily_sleep' health metrics, 8 unique users for their 'weight_loginfo' health metrics and 33 unique users for the rest. Based on this very low sample size of 'weight_loginfo' data providers, I have made the decision to drop this data frame along with 'daily_sleep' data as part of my analysis since this won’t add much insight. I have used 'daily_activity', 'hourly_calories', 'hourly_intensities', 'hourly_steps', 'sleep_day', and 'minute_METs_narrow' data tables for my analysis, all these tables have 33 unique users input.
